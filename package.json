@@ -1,0 +1,52 @@
+{
+  "name": "currency-rate",
+  "version": "1.0.0",
+  "description": "\"# currency-rate\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode development",
+    "start": "node server/server.js",
+    "serve": "concurrently \"rm -rf dist && webpack --watch --mode development\"  \"npm start\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node server/migration.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlaviSau/currency-rate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlaviSau/currency-rate/issues"
+  },
+  "homepage": "https://github.com/OlaviSau/currency-rate#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "d3": "^5.9.2",
+    "date-fns": "1.30.1",
+    "express": "^4.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sqlite3": "^4.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-alpha.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

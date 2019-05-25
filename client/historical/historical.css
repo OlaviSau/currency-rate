@@ -1,0 +1,35 @@
+#historical {
+    height: 450px;
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+label, button {
+    margin: 20px;
+    display: block;
+    font-family: monospace;
+}
+svg {
+    background: #f6fbfc;
+    padding:0;
+}
+button {
+    background: white;
+    border: 1px solid black;
+}
+input {
+    border-width: 0 0 1px 0;
+    display: block;
+    height: 0;
+    padding: 0;
+    transition: height 200ms ease;
+}
+
+input:focus, input:not(:placeholder-shown) {
+    height: 20px;
+    left: 0;
+}
+
+*:focus {
+    outline: none;
+}
